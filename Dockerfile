@@ -17,7 +17,7 @@ RUN corepack enable && corepack prepare yarn@stable --activate
 # Copy package files and install dependencies
 COPY package*.json yarn.lock ./
 RUN yarn install
-RUN yarn global add turbo -W
+RUN yarn dlx add turbo -W
 
 # Copy the rest of the app
 COPY . .
