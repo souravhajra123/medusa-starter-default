@@ -25,10 +25,6 @@ COPY . .
 ENV NODE_ENV=production
 ENV MEDUSA_TELEMETRY_DISABLED=true
 
-# Build the project (optional if needed)
-COPY .yarnrc.yml ./
-RUN yarn run build
-
 # Expose the default Medusa port
 EXPOSE 9000
 
