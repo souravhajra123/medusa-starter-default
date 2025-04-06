@@ -1,0 +1,6 @@
+# Good .dockerignore
+.dockerignore
+Dockerfile
+.git
+.gitignore
+
