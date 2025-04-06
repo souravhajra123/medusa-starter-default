@@ -31,4 +31,3 @@ EXPOSE 9000
 
 # Start Medusa
 CMD ["yarn", "start"]
-CMD ["yarn", "workspace", "medusa", "start"]
