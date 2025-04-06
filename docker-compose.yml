@@ -29,8 +29,6 @@ services:
     image: redis:7
     restart: always
 
-    command: sh -c "yarn install && yarn start"
-
 volumes:
   pgdata:
 
