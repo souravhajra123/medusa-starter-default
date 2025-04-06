@@ -24,7 +24,6 @@ COPY . .
 # Set environment variable
 ENV NODE_ENV=production
 ENV MEDUSA_TELEMETRY_DISABLED=true
-RUN yarn install
 
 # Expose the default Medusa port
 EXPOSE 9000
