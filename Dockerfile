@@ -17,6 +17,7 @@ RUN corepack enable && corepack prepare yarn@stable --activate
 # Copy package files and install dependencies
 COPY package*.json yarn.lock .yarnrc.yml ./
 RUN yarn install
+RUN ls -l node_modules
 
 # Copy the rest of the app
 COPY . .
